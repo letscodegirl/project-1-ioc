@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          },
+          aspectRatio: {
+            'landscape':'5 / 3'
+            'portrait':'3 / 5'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+
+<style type="text/tailwindcss">
+
+    h1, h2, h3 {
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 0.5em;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        margin-bottom: ;
+    }
+
+</style>
+              
+              
+<header class="flex justify-center items-center p-4 border-b-2 border-black p-8 max-w-screen-xl mx-auto">
+    <div class="grow">
+      <a href="/">
+        <h2> LOGO </h2>
+      </a>
+    </div>
+    <nav class="grow text-right">
+      <a href="#" class="p-2"> Nav 1 </a>
+      <a href="#" class="p-2"> Nav 2 </a>
+      <a href="#" class="p-2"> Nav 3 </a>
+      <a href="#" class="p-2"> Nav 4 </a>
+    </nav>
+  </header>
+  
+  <h1 class="p-8"> This Is a Fun Heading </h1>
+
+  <section class="max-w-screen-xl mx-auto"> 
+    <div class="bg-cover bg-center min-h-[40vh]" style="background-image:url('/images/moody-1.jpg')">
+    </div>
+
+    <div class="grid grid-cols-6 gap-4 p-8">
+        <div>
+            <p class="font-bold">
+                <span class="block capitalize text-xs font-bold"> Fact: </span>
+                900
+            </p>
+        </div>
+        <div> 
+            <p class="font-bold">
+                <span class="block capitalize text-xs font-bold"> Fact:  </span>
+                Y2K
+            </p> 
+        </div>
+        <div> 
+            <p class="font-bold">
+                <span class="block capitalize text-xs font-bold"> Fact:  </span>
+                420K
+            </p> 
+        </div>
+        <div class="col-span-3"> 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem cumque quidem, dolore, maxime voluptatum illum est molestias qui distinctio laborum ex fugit sit aperiam numquam sapiente eius! Tenetur, non quae.</p> 
+        </div>
+    </div>
+
+  </section>
+
+  <section class="p-8 max-w-screen-xl mx-auto">
+    <div class="max-w-screen-md mx-auto text-center"> 
+    <h2> Another heading </h2>
+    <h3> Smaller heading </h3>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam fuga nostrum quod id iusto explicabo neque cumque autem ducimus error possimus itaque, corrupti cum mollitia culpa maxime sapiente laboriosam illum?</p>
+    </div>
+  </section> 
+  
+  <!-- gallery -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <img src="/images/moody-2.jpg">
+    <img src="/images/moody-3.jpg">
+    <img src="/images/moody-4.jpg">
+    <img src="/images/moody-5.jpg">
+    <img src="/images/moody-6.jpg">
+    <img src="/images/moody-7.jpg">
+  </div>
+  </section>    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
