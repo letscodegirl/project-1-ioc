@@ -8,15 +8,22 @@
   <script>
     tailwind.config = {
       theme: {
+        lineHeight: {
+            'tight': '0.9',
+            'snug': '1.1',
+            'normal': '1.5',
+            'relaxed': '1.625',
+            'loose': '2',
+        },
         extend: {
           colors: {
             clifford: '#da373d',
           },
-          aspectRatio: {
+        aspectRatio: {
             'landscape':'5 / 3'
             'portrait':'3 / 5'
-          }
-        }
+          },
+        },
       }
     }
   </script>
@@ -25,10 +32,11 @@
 
 <style type="text/tailwindcss">
 
-    h1, h2, h3 {
+    h1, h2, h3, h4 {
         text-transform: uppercase;
         font-weight: bold;
         margin-bottom: 0.5em;
+        letter-spacing: -0.01rem;
     }
 
     h1 {
@@ -36,11 +44,23 @@
     }
 
     h2 {
-        font-size: 2rem;
+        font-size: 3.5rem;
     }
 
-    p {
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    h5, p {
         margin-bottom: ;
+    }
+
+    .button { 
+        @apply inline-block bg-black uppercase tracking-wide text-white hover:bg-gray-600 px-6 py-2;
     }
 
 </style>
@@ -49,7 +69,7 @@
 <header class="flex justify-center items-center p-4 border-b-2 border-black p-8 max-w-screen-xl mx-auto">
     <div class="grow">
       <a href="/">
-        <h2> LOGO </h2>
+        <h2 class="logo"> LOGO </h2>
       </a>
     </div>
     <nav class="grow text-right">
@@ -93,10 +113,14 @@
   </section>
 
   <section class="p-8 max-w-screen-xl mx-auto">
+
+    <div class="grid grid-cols-2">
+
     <div class="max-w-screen-md mx-auto text-center"> 
     <h2> Another heading </h2>
     <h3> Smaller heading </h3>
     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam fuga nostrum quod id iusto explicabo neque cumque autem ducimus error possimus itaque, corrupti cum mollitia culpa maxime sapiente laboriosam illum?</p>
+    </div>
     </div>
   </section> 
   
@@ -109,14 +133,50 @@
     <img src="/images/moody-6.jpg">
     <img src="/images/moody-7.jpg">
   </div>
+  <div class="text-center p-4">
+    <a href="#" class="button"> Sign up </a> 
+  </div>
   </section>    
 
+  <section class="p-8 max-w-screen-xl mx-auto">
+
+    <div class="pb-8">
+        <h1 class="mb-2 leading-tight"> This Is a <br> Fun Heading </br> </h1>
+    </div>
+    
+    <div class="grid grid-cols-2 gap-4">
+
+    <div class="p-12 pl-0"> 
+        <h3 class="border-b border-b-2 border-gray-800 mb-0 max-w-xs"> another heading </h3>
+        <h4> this is a slick subheading </h4>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus accusamus facilis explicabo sint excepturi id repellendus! Vero recusandae officiis pariatur voluptates nihil voluptatem, aut corrupti sint nam, neque blanditiis ipsa!</p>
+
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero facilis, tempora repellendus ducimus eius mollitia officia, ad doloribus neque inventore quisquam nam perspiciatis. Nihil harum odio qui iusto ex voluptatem!</p>
+    </div>
+    <div class="bg-cover bg-center" style="background-image:url(/images/moody-1.jpg)">
+    </div>
+
+    <div class="text-center p-4">
+        <a href="#" class="button"> Sign up </a> 
+      </div>
+  
+  <!-- gallery -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+  </div>
+  <div class="text-center p-4">
+  </div>
+  </section> 
+
+
+<section class="p-8 max-w-screen-xl mx-auto border-y-2 border-black text-center leading-snug">
+<h2 class="text-border"> Sometimes all you need is a big random block of text to really drive home the point. </h2>
 
 
 
+</section>
 
-
-
+<section class="p-8"></section>
 
 
 
