@@ -1,0 +1,278 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        lineHeight: {
+            'tight': '0.9',
+            'snug': '1.1',
+            'normal': '1.5',
+            'relaxed': '1.625',
+            'loose': '2',
+        },
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          },
+        aspectRatio: {
+            'landscape':'5 / 3'
+            'portrait':'3 / 5'
+          },
+        },
+      }
+    }
+  </script>
+</head>
+<body>
+
+<style type="text/tailwindcss">
+
+    h1, h2, h3, h4 {
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 0.5em;
+        letter-spacing: -0.01rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    h5, p {
+        margin-bottom: ;
+    }
+
+    footer a {
+        @apply block uppercase tracking-wide pb-1
+    }
+
+    /* form styling */
+
+    .button {
+        @apply inline-block bg-black uppercase tracking-wide text-white hover:bg-gray-600 px-6 py-2;
+    }
+
+    label {
+        @apply uppercase tracking-wide font-bold;
+    }
+
+    input,
+    textarea {
+        @apply block border-2 border-gray-900 p-2 w-full resize-none;
+    }
+
+</style>
+
+
+<header class="flex justify-center items-center p-4 border-b-2 border-black p-8 max-w-screen-xl mx-auto">
+    <div class="grow">
+      <a href="/">
+        <h2 class="logo"> LOGO </h2>
+      </a>
+    </div>
+    <nav class="grow text-right">
+      <a href="#" class="p-2"> Nav 1 </a>
+      <a href="#" class="p-2"> Nav 2 </a>
+      <a href="#" class="p-2"> Nav 3 </a>
+      <a href="#" class="p-2"> Nav 4 </a>
+    </nav>
+  </header>
+
+  <section class="max-w-screen-xl mx-auto">
+    <h1 class="py-4"> This Is a Fun Heading </h1>
+    <div class="bg-cover bg-center min-h-[40vh]" style="background-image:url('/images/moody-1.jpg')">
+    </div>
+
+    <div class="grid grid-cols-6 gap-4 p-8">
+        <div>
+            <p class="font-bold">
+                <span class="block capitalize text-xs font-bold"> Fact: </span>
+                900
+            </p>
+        </div>
+        <div>
+            <p class="font-bold">
+                <span class="block capitalize text-xs font-bold"> Fact:  </span>
+                Y2K
+            </p>
+        </div>
+        <div>
+            <p class="font-bold">
+                <span class="block capitalize text-xs font-bold"> Fact:  </span>
+                420K
+            </p>
+        </div>
+        <div class="col-span-3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem cumque quidem, dolore, maxime voluptatum illum est molestias qui distinctio laborum ex fugit sit aperiam numquam sapiente eius! Tenetur, non quae.</p>
+        </div>
+    </div>
+
+  </section>
+
+  <section class="p-8 max-w-screen-xl mx-auto">
+
+    <div class="grid">
+
+    <div class="max-w-screen-md mx-auto text-center">
+    <h2> Another heading </h2>
+    <h3> Smaller heading </h3>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam fuga nostrum quod id iusto explicabo neque cumque autem ducimus error possimus itaque, corrupti cum mollitia culpa maxime sapiente laboriosam illum?</p>
+    </div>
+    </div>
+  </section>
+
+  <!-- gallery -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <img src="/images/moody-2.jpg">
+    <img src="/images/moody-3.jpg">
+    <img src="/images/moody-4.jpg">
+    <img src="/images/moody-5.jpg">
+    <img src="/images/moody-6.jpg">
+    <img src="/images/moody-7.jpg">
+  </div>
+  <div class="text-center p-4">
+    <a href="#" class="button"> Sign up </a>
+  </div>
+  </section>
+
+  <section class="p-8 max-w-screen-xl mx-auto">
+
+    <div class="pb-8">
+        <h1 class="mb-2 leading-tight"> This Is a <br> Fun Heading </br> </h1>
+    </div>
+
+    <div class="grid grid-cols-2 gap-4">
+
+    <div class="p-12 pl-0">
+        <h3 class="border-b border-b-2 border-gray-800 mb-0 max-w-xs"> another heading </h3>
+        <h4> this is a slick subheading </h4>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus accusamus facilis explicabo sint excepturi id repellendus! Vero recusandae officiis pariatur voluptates nihil voluptatem, aut corrupti sint nam, neque blanditiis ipsa!</p>
+
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero facilis, tempora repellendus ducimus eius mollitia officia, ad doloribus neque inventore quisquam nam perspiciatis. Nihil harum odio qui iusto ex voluptatem!</p>
+    </div>
+    <div class="bg-cover bg-center" style="background-image:url(/images/moody-1.jpg)">
+    </div>
+
+    <div class="text-center p-4">
+        <a href="#" class="button"> Sign up </a>
+      </div>
+
+  <!-- gallery -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+  </div>
+  <div class="text-center p-4">
+  </div>
+  </section>
+
+
+<section class="p-8 max-w-screen-xl mx-auto border-y-2 border-black text-center leading-snug">
+<h2 class="text-border"> Sometimes all you need is a big random block of text to really drive home the point. </h2>
+
+</section>
+
+<section class="p-8"></section>
+
+<section class="py-8 max-w-screen-2xl mx-auto grid grid-cols-6">
+    <div class="col-span-1 relative">
+        <h2 class="[writing-mode:vertical-rl] rotate-180 right-4"> Gallery </h2>
+   </div>
+
+    <div class="col-span-4">
+    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto, eum corrupti fuga asperiores consequuntur dolores ea soluta veritatis qui illum dignissimos facere vitae natus modi. Quaerat molestiae enim minima et!</p>
+    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti suscipit aliquam officiis perferendis voluptate vero tempore accusamus voluptas! Expedita aspernatur velit enim repellat molestias laboriosam! Rerum tempora amet vero temporibus.</p>
+    <a class="button mt-4 mb-4" href="#"> Sign up </a>
+    </div>
+    <div class="col-span-1"></div>
+
+</section>
+
+<section class="grid grid-cols-6 gap-4 items-center max-w-screen-2xl mx-auto mb-12">
+    <div class="col-span-1">
+        <img src="/images/moody-9.jpg">
+    </div>
+
+    <div class="col-span-2">
+        <img src="/images/moody-10.jpg">
+    </div>
+
+    <div class="col-span-2">
+        <img src="/images/moody-11.jpg">
+    </div>
+
+    <div class="col-span-1">
+        <img src="/images/moody-12.jpg">
+    </div>
+
+</section>
+
+<section class="max-w-screen-xl mx-auto border-y border-y-2 border-gray-800 py-16">
+    <div class="grid grid-cols-5 gap-4">
+        <div class="col-span-full">
+            <h2> Contact Us. </h2>
+        </div>
+        <div class="col-span-3 pr-8">
+            <form action="#">
+                <label for="fname">Name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Any name will do" class="min-w-[50%] mb-4">
+                <label for="email">Email:</label>
+                <input type="text" id="lname" name="lname" placeholder="We prefer something real" class="min-w-[50%] mb-4">
+                <label for="message"> Message </label>
+                <input type="message" rows="10" placeholder="The cat was playing in the garden." class="w=full mb-4"></textarea>
+                <input type="submit" value="Send it baby" class="button">
+            </form>
+        </div>
+        <div class="col-span-2 bg-cover bg-center" style="background-image:url(/images/moody-13.jpg)">
+
+        </div>
+    </div>
+
+
+</section>
+
+<footer class="max-w-screen-xl mx-auto grid grid-cols-5 py-16">
+    <div class="col-span-1">
+        <h4 class="font-bold"> LOREM </h4>
+        <nav>
+            <a href="#"> Link 1 </a>
+            <a href="#"> Link 2 </a>
+            <a href="#"> Link 3 </a>
+            <a href="#"> Link 4 </a>
+        </nav>
+    </div>
+    <div class="col-span-1">
+        <nav>
+            <a href="#"> Link 1 </a>
+            <a href="#"> Link 2 </a>
+            <a href="#"> Link 3 </a>
+            <a href="#"> Link 4 </a>
+        </nav>
+    </div>
+    <div class="col-span-3 text-center">
+        <h5 class="font-bold uppercase">Subscribe to our newsletter</h5>
+        <form action="#">
+            <input id="lname" class="ml-auto min-w-[50%] mb-4" name="lname" placeholder="Your email" type="text">
+            <input class="button" type="submit" value="Subscribe">
+        </form>
+    </div>
+</footer>
+
+</body>
+</html>
